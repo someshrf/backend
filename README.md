@@ -2,6 +2,11 @@
   //creating Database:
     create database registration;
 
+//establish connection with server::
+   
+   $db = mysqli_connect('localhost','username','password','database name'(here registration));
+
+
   //creating table for users:
     create table users (id INT(11) PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(255), password VARCHAR(255), type VARCHAR(15));
@@ -15,7 +20,7 @@
    
      UPDATE users SET type='prof' WHERE id='1';
                                             
-  //add a class representative
+  //add a class representative as second user
      register through the page and type is student by default.
      to update his/her status to that of a class representative:
    
