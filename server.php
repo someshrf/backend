@@ -73,7 +73,7 @@ if(isset($_POST['useradm'])) {
   $note1 = mysqli_real_escape_string($db, $_POST['useradmin']);
 
    if($note1) {
-    $sql = "UPDATE notes set type ='prof' WHERE id='$note1'";
+    $sql = "UPDATE users set type ='prof' WHERE id='$note1'";
     mysqli_query($db,$sql);
     }
 }
